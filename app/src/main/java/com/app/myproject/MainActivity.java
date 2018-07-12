@@ -71,11 +71,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(int position) {
                 MyModel tileToBeSelect = mArrayList.get(position);
                 if (!tileToBeSelect.isSelected()){
-                    //MyModel previousSelectedTile = getSelectedTitle();
                     unSelectAllTiles();
-                    //String tempNumber = tileToBeSelect.getNumber();
-                    //tileToBeSelect.setNumber(previousSelectedTile.getNumber());
-                    //previousSelectedTile.setNumber(tempNumber);
                     tileToBeSelect.setSelected(true);
                     setAdapter();
                 }
